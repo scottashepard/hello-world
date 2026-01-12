@@ -1,0 +1,90 @@
+.app {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 28px;
+  background:
+    radial-gradient(circle at top, rgba(0, 122, 255, 0.12), transparent 55%),
+    linear-gradient(180deg, #f7f8fc 0%, #eceff7 100%);
+}
+
+.ios-card {
+  width: min(380px, 92vw);
+  padding: 28px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(18px);
+}
+
+.ios-header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.ios-header h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.ios-kicker {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ios-gray);
+}
+
+.ios-count {
+  font-size: 56px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #1c1c1e;
+  text-align: center;
+  margin: 12px 0 24px;
+}
+
+.ios-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.ios-button {
+  border: none;
+  border-radius: 16px;
+  padding: 14px 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background: var(--ios-blue);
+  box-shadow: 0 8px 20px rgba(0, 122, 255, 0.3);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ios-button:active {
+  transform: translateY(1px) scale(0.99);
+  box-shadow: 0 6px 14px rgba(0, 122, 255, 0.25);
+}
+
+.ios-button-ghost {
+  background: #f2f2f7;
+  color: #1c1c1e;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 480px) {
+  .ios-card {
+    padding: 22px;
+  }
+
+  .ios-count {
+    font-size: 48px;
+  }
+}

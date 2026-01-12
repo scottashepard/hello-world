@@ -1,0 +1,31 @@
+:root {
+  --ios-blue: #007aff;
+  --ios-gray: #8e8e93;
+  --ios-gray-6: #f2f2f7;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #1c1c1e;
+  background-color: var(--ios-gray-6);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--ios-gray-6);
+}
+
+#root {
+  min-height: 100vh;
+}
